@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <span class="eyebrow">Internship Tracker</span>
+        <h1>Track applications, deadlines, and interview performance</h1>
+        <p>Manage your internship journey from application to offer with a clean dashboard, deadline alerts, and analytics.</p>
+      </div>
+      <div class="hero-actions">
+        <button id="refreshButton" class="primary">Refresh data</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel form-panel">
+        <div class="panel-header">
+          <h2>Add or update an application</h2>
+          <span>Enter details, save progress, and review your timeline.</span>
+        </div>
+        <form id="applicationForm" class="application-form">
+          <div class="field-row">
+            <label>Company</label>
+            <input id="company" type="text" placeholder="Company name" required />
+          </div>
+          <div class="field-row">
+            <label>Position</label>
+            <input id="position" type="text" placeholder="Internship role" required />
+          </div>
+          <div class="field-row">
+            <label>Status</label>
+            <select id="status">
+              <option>Applied</option>
+              <option>Phone Screen</option>
+              <option>Technical Interview</option>
+              <option>Offer</option>
+              <option>Rejected</option>
+            </select>
+          </div>
+          <div class="field-row split-row">
+            <div>
+              <label>Applied date</label>
+              <input id="appliedDate" type="date" />
+            </div>
+            <div>
+              <label>Deadline</label>
+              <input id="deadline" type="date" />
+            </div>
+          </div>
+          <div class="field-row split-row">
+            <div>
+              <label>Interview score</label>
+              <input id="interviewScore" type="number" min="0" max="10" placeholder="0-10" />
+            </div>
+            <div>
+              <label>Notes</label>
+              <input id="notes" type="text" placeholder="Short notes" />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="primary">Save application</button>
+            <button type="button" id="clearButton">Clear form</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel analytics-panel">
+        <div class="panel-header">
+          <h2>Progress analytics</h2>
+          <span>Quick metrics to help you focus on the next action.</span>
+        </div>
+        <div class="analytics-grid" id="analyticsGrid"></div>
+      </section>
+
+      <section class="panel list-panel">
+        <div class="panel-header">
+          <h2>Application pipeline</h2>
+          <span>Review current entries, deadlines, and interview progress.</span>
+        </div>
+        <div id="applicationList" class="application-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f8ff;
+  color: #102a43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef6ff 0%, #ffffff 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 22px 60px;
+}
+
+.hero {
+  display: grid;
+  gap: 1.6rem;
+  padding: 28px 28px 24px;
+  border-radius: 28px;
+  background: radial-gradient(circle at top left, rgba(56, 115, 255, 0.14), transparent 45%),
+    rgba(7, 18, 40, 0.02);
+  border: 1px solid rgba(15, 40, 96, 0.12);
+}
+
+.hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  background: rgba(56, 115, 255, 0.12);
+  color: #0f4ac7;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0.7rem 0 0.5rem;
+  font-size: clamp(2rem, 2.8vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 760px;
+  color: #334e68;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 40, 96, 0.08);
+  box-shadow: 0 32px 80px rgba(67, 97, 148, 0.08);
+  padding: 24px;
+}
+
+.panel-header {
+  margin-bottom: 18px;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.panel-header span {
+  color: #526d82;
+  font-size: 0.96rem;
+}
+
+.application-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field-row {
+  display: grid;
+  gap: 8px;
+}
+
+.field-row label {
+  font-size: 0.95rem;
+  color: #334e68;
+}
+
+.field-row input,
+.field-row select {
+  width: 100%;
+  border: 1px solid rgba(15, 40, 96, 0.18);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #f8fbff;
+  color: #0f1f39;
+}
+
+.split-row {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 22px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #3d85ff, #0e6eff);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+button#clearButton {
+  background: #e2e8f0;
+  color: #102a43;
+}
+
+.analytics-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.metric-card {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(15, 40, 96, 0.08);
+  background: #f8fbff;
+}
+
+.metric-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  color: #526d82;
+}
+
+.metric-card p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #102a43;
+}
+
+.application-list {
+  display: grid;
+  gap: 16px;
+}
+
+.application-card {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 40, 96, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-row h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.card-row .tag {
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tag.Applied { background: rgba(56, 115, 255, 0.12); color: #1047d3; }
+.tag.Phone\ Screen { background: rgba(255, 167, 38, 0.16); color: #b16900; }
+.tag.Technical\ Interview { background: rgba(76, 175, 80, 0.14); color: #2e7d32; }
+.tag.Offer { background: rgba(40, 197, 139, 0.16); color: #0f6f48; }
+.tag.Rejected { background: rgba(239, 68, 68, 0.12); color: #991b1b; }
+
+.details-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.detail-item {
+  color: #334e68;
+  font-size: 0.95rem;
+}
+
+.application-card .description {
+  color: #334e68;
+  line-height: 1.65;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-actions button {
+  background: #ffffff;
+  color: #0f1f39;
+  border: 1px solid rgba(15, 40, 96, 0.12);
+  min-width: 110px;
+}
+
+.card-actions button.delete {
+  border-color: rgba(239, 68, 68, 0.2);
+  color: #b91c1c;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .app-shell {
+    padding: 20px 14px 36px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+}

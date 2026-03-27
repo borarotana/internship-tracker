@@ -1,0 +1,24 @@
+[
+  {
+    "id": 2,
+    "company": "Meta",
+    "position": "Software Engineer",
+    "status": "Offer",
+    "appliedDate": "2026-03-18",
+    "deadline": "2026-04-30",
+    "interviewScore": 6,
+    "notes": "",
+    "lastUpdated": "2026-03-27T16:54:54.772579Z"
+  },
+  {
+    "id": 1,
+    "company": "Anthropic",
+    "position": "Machine Learning Engineer",
+    "status": "Applied",
+    "appliedDate": "2026-03-25",
+    "deadline": "2026-04-14",
+    "interviewScore": 9,
+    "notes": "",
+    "lastUpdated": "2026-03-27T16:54:26.821607Z"
+  }
+]
