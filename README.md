@@ -18,9 +18,11 @@ Internship Tracker is a modern full-stack web application designed to help stude
 
 ## Run locally
 
-1. Open a terminal and navigate to the project folder:
+1. Open a terminal and navigate to the project folder (replace with your actual path if needed):
    ```bash
-   cd "c:\Users\BORA ROTANA\OneDrive\文件\WEB DEV\InternshipTracker"
+   cd path/to/InternshipTracker
+   # Example:
+   # cd ~/Downloads/InternshipTracker
    ```
 
 2. Create a virtual environment (optional but recommended):
